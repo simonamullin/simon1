@@ -1,0 +1,31 @@
+body {
+	background-color: #E1D3FF;
+	font-family: Verdana;
+}
+h1 {
+	color:black;
+	font-size: 18pt;
+}
+p {
+	color:black;
+	font-size: 12pt;
+	font-family: Verdana;
+}
+h2 {
+	font-size: 12pt;
+	font-style: bold; 
+	text-decoration: underline;
+}
+.employment-dates {
+	font-style: italic;
+	font-style: bold;
+}
+.employment-location {
+	font-style: bold; 
+	font-style: italic;
+
+}
+a {
+    color: #0;
+    text-decoration:none
+}
