@@ -1,5 +1,5 @@
 body {
-		font-family: times;
+    font-family: 'Arimo', sans-serif;    
     padding: 50px;
 		line-height: 1.5;
   	margin: 30px;
@@ -27,6 +27,7 @@ h1 {
 
 h3 {
   text-transform: uppercase;
+
  }
 
 p {
@@ -42,8 +43,8 @@ img {
   width: auto;
   height: 250px;
 	border: 2px solid;
-	padding: 3px;
-  margin: 3px
+	padding: 2px;
+  margin: 2px;
 }
 
 #social {
@@ -60,6 +61,7 @@ img {
 
 .profile-image {
   float: right;
+  padding: 5px;
 }
 
 .gallery-image {
