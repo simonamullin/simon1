@@ -1,0 +1,21 @@
+img {
+	padding: 5px;
+}
+
+.nature-img-one {
+	background-image: url('http://placeimg.com/1000/1000/animals');
+	background-repeat: no-repeat;
+	background-position: center;
+  	background-size: cover;
+ 	height: 400px;
+	max-width: 100%;
+}
+
+.nature-img-two {
+	max-width: 100%;
+	background-size:cover;
+}
+
+.nature-img-3 {
+	width: 100%;
+}
