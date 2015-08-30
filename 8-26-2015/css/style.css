@@ -41,24 +41,6 @@ Developer @GA in NYC
   padding: 0 10px 10px 0; /* note the padding around a left floated image */
 }
 
-.logo {
-  text-align: left;
-  color: white;
-  padding: 10px;
-  margin: 10px 20px 20px 40px;
-  font-size: 24px;
-  font-weight: Extra bold;
-}
-
-.logo-2 {
-  text-align: center;
-  color: yellow;
-  padding: 30px;
-  font-size: 24px;
-  font-weight: Extra bold;
-}
-
-
 /******************************************
 /* BASE STYLES
 /*******************************************/
@@ -67,31 +49,8 @@ body {
      color: #000;
      font-size: 12px;
      line-height: 1.4;
-     font-family: Helvetica, Arial, sans-serif;     
-}
-
-header {
-  color: white;
-}
-
-h2 {
-  text-align: center;
-  color: white;
-  font-size: 26px;
-  font-weight: normal;
-}
-
-a {
-  text-decoration: none;
-}
-
-footer {
-  text-align: center;
-  color: white;
-  background-color: black;
-  display: block;
-  height: 40px;
-  font-size: 9px;
+    font-family: 'Open Sans', sans-serif;
+    background-size: cover;
 }
 
 
@@ -102,135 +61,161 @@ footer {
 /* Center the container */
 #container {
   width: 100%;
-  max-height: 400px;
-  margin: auto;
-  height: 500px;
-  display: block;
+  max-width:: 100%;
   text-align: center;
   background-position: center;
-  background: url(../images/header_bg.jpg)
-  no-repeat center top rgb(134,141,157);
+  background: url(../images/header_bg.jpg) no-repeat center top rgb(134,141,157);
   background-size: cover;
 }
 
+#container, #benefits {
+height: 350px;
+}
 
 #benefits {
   width: 100%;
-  height: 400px;
-  display: block;
-  color: gray;
   background-color: #f0efef;
-  background-position: center;
-  background-size: cover;
-  padding: 70px;
-  margin: 0px 0px 0px 100px;
-}
-
-#testimonial {
-  width: 100%;
-  padding: 50px;
-  height: 300px;
   display: block;
-  text-align: center;
-  background: url(../images/testimonial_bg.jpg) 
-  no-repeat center top rgb(134,141,157);
-  background-size: cover;
 }
 
-#yellow-cta {
+#testimonials {
   width: 100%;
-  height: 100px;
+  background: url(../images/testimonial_bg.jpg) no-repeat center top rgb(134,141,157);
+  height: 300px;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  display: block;
+  font-size: 20px;
+
+}
+
+#yellow-area {
+  width: 100%;
+  height: 120px;
   display: block;
   background-color: #f9e42e;
-  background-size: cover;
   text-align: center;
+  
 }
 
- #bottom {
+footer {
   width: 100%;
-  margin: auto;
-  height: 200px;
-  display: block;
-  text-align: center;
-  background-position: center;
   background-color: #121212;
-  background-size: cover;
+  height: auto;
+  text-align: center;
+  padding: 40px;
 }
+
+footer, body {
+  background-color: #121212;
+}
+
+footer, p {
+  color: white;
+}
+
 
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
 
-.h2-benefits {
-  text-align: left;
-  color:  #606161;
-  margin: 10px 10px 10px 0px;
+.logo, .logo-2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: white;
+  padding: 10px;
+  margin: 0px 20px 20px 40px;
 }
 
-.h2-testimonial {
+.logo {
+  text-align: left;
+}
+
+.logo-2 {
+  text-align: center;
+  color: yellow;
+  margin: 0px 0px 20px 0px;
+
+}
+
+
+.slogan {
+  font-size: 24px;
+  text-align: center;
+  color: white;
+}
+
+.cta-1, .cta-2 {
+  font-size: 20px;
+  font-weight: 550;
+  display: inline-block;
+  border-radius: 5px;
+  text-decoration: none;
+  background-color: yellow;
+  margin: 30px;
+  padding: 15px;
+  width: 250px;
+  text-align: center;
+}
+
+.cta-1 {
+  color: black;
+  background-color: yellow;
+}
+
+.cta-2 {
+  color: white;
+  background-color: #033048;
+}
+
+.benefits-header {
+  margin: 50px 20px 10px 40px;
+  display: inline-block;
+}
+
+.benefits-header, .benefits-body {
+  font-size: 20px;
+}
+
+.benefits-body {
+  font-weight: lighter;
+  margin: 10px 20px 10px 40px;
+  
+}
+
+
+.bullets {
+  font-size: 20px;
+  margin: 20px 20px 10px 40px;
+
+}
+
+.bullets li {
+  display: block;
+  font-weight: lighter;
+
+}
+
+.quote {
   font-style: italic;
-  font-weight: light;
-  font-family: Arial;
-  width: 450px;
-  padding-bottom: 10px;
-  font-size: 18px;
+  font-weight: lighter;
+  padding-top: 125px;
 }
 
 .amanda {
-  color: white;
-  font-family: helvetica !important;
-  font-size: 18px;
-}
-
-.h3-benefits {
-  margin: 0px 0px 20px 0px;
-  font-size: 14px;
-  width: 350px;
-}
-
-.ul-a {
-  margin: 0px 20px 0px 40px;
-  list-style: circle;
-  font-size: 14px;
-  width: 240px;
-} 
-
-.li-a {
-  list-style: decimal;
-}
-
-.cta-one {
-  background-color: yellow;
-  color: black;
-  font-size: 18px;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 5px;
-  margin: 30px;
+  font-weight: 600;
   padding: 5px;
-  width: 200px;
-  font-weight: bold;
-}
-
-.cta-two {
-  background-color: #033048 ;
-  color: white;
-  font-size: 18px;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 5px;
-  margin: 30px;
-  padding: 10px;
-  width: 250px;
-  font-weight: bold;
 }
 
 .social {
   display: inline-block;
-  margin: 20px 20px;
-  height: auto;
-  width: auto;
-  max-width: 30px;
-  max-height: 30px;
+  text-align: center;
+  margin: 0 0 50px 0;
+  padding: 0 30px 0 20px;
 }
+
+
+
+
