@@ -72,8 +72,9 @@ header {
 
 nav {
   padding: 20px;
-  float: right;
-/*  width: 40%; 
+  text-align: right;
+/*  float: right;
+*//*  width: 40%; 
 */}
 
 
@@ -83,7 +84,7 @@ nav {
 }
 
 .primary {
-  float: left;
+  /*float: left;*/
 }
 
 .primary,
@@ -110,9 +111,9 @@ aside {
 
 .categories {
   display: inline-block;
-  float: left;
-  vertical-align: top;
-}
+  /*float: left;*/
+/*  vertical-align: top;
+*/}
 
 .categories li {
   list-style-type: none;
