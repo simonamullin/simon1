@@ -1,0 +1,153 @@
+/*
+Project Name: BrineBuddy.com -- Final Project Outline
+Client: BrineBuddy
+Author: Simon Mullin
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* TESTING OUTLINE STYLES
+/*******************************************/
+
+.container {
+
+}
+
+header {
+  width: 100%;
+  background-color: #E0FFD9;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid;
+}
+
+.header-logo {
+  width: 20%;
+  padding: 10px;
+}
+
+.header-nav li {
+  display: inline-block;
+  margin: 20px 40px 10px 40px;
+  text-decoration: none;
+}
+
+.main_primary {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid;
+}
+
+.main_featured-content {
+  background-color: #ADFF88;
+  width: 70%;
+  height: 600px;
+  margin: 20px 40px 10px 40px;
+  text-align: center;
+}
+
+.main_aside {
+  background-color: #C8F866;
+  width: 30%;
+  margin: 20px 40px 10px 40px;
+}
+
+.main_about {
+  background-color: #96FFB0;
+  text-align: center;
+  margin: 20px 40px 10px 40px;
+  height: 500px;
+  border-bottom: 1px solid;
+}
+
+.main_recipes_hed {
+  margin: 20px 40px 10px 40px;
+  border-bottom: 1px solid;
+}
+
+.main_recipes_h2 {
+  text-align: center;
+}
+
+.main_recipes_pickle-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main_recipes_pickle-links a {
+  width: 250px;
+  height: 250px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #9BF8DE;
+}
+
+.main_recipes_ctas {
+  padding: 10px;
+  text-align: center;
+}
+
+.main_recipes_cta-2 {
+  float: right;
+}
+
+footer {
+  text-align: center;
+  background-color: #D1FF34;
+  margin: 20px 40px 10px 40px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+
+
+
+/******************************************
+/* OTHER STYLES
+/*******************************************/
