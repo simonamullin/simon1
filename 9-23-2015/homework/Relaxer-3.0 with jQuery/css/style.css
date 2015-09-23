@@ -1,0 +1,280 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  background-color: #f0efef;
+  color: #000;
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 1.5;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+  align-items: center;
+  background-color: #033048;
+  display: flex;
+  justify-content: center;
+}
+
+.header__logo {
+  color: #ffffff;
+  font-size: 48px;
+  max-width: 240px;
+  width: 100%;
+}
+
+.header__nav {
+  max-width: 700px;
+  text-align: right;
+  width: 100%;
+}
+
+.header__nav a {
+  color: #f9e42e;
+  display: inline-block;
+  margin: 0 0 0 40px;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.main__primary {
+  max-width: 700px;
+  margin: 10px;
+}
+
+.main__primary__article {
+  border-bottom: solid 1px #999;
+}
+
+.main__primary__article:first-child p:first-letter {
+  float: left; 
+  font-size: 60px; 
+  line-height: 0.7; 
+  padding-top: 4px; 
+  padding-right: 8px; 
+  padding-left: 0;
+}
+
+.main__primary__article__title {
+  color: #033048;
+  font-size: 40px;
+}
+
+.main__primary__article__image {
+  width: 100%;
+}
+
+.main__primary__article__footer {
+  text-align: right;
+}
+
+.main__primary__article__cta {
+  font-weight: bold;
+  color: blue;
+  text-decoration: none;
+}
+
+.main__primary__article p {
+  color: #606161;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.main__aside {
+  max-width: 240px;
+  margin: 10px;
+}
+
+.main__aside h2 {
+  color: #043049;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.main__aside ul { 
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main__aside ul li a {
+  color: #043049;
+  font-size: 24px;
+  font-weight: 100;
+  text-decoration: none;
+}
+
+.main__aside__ad {
+  margin: 30px 0;
+}
+
+.footer-cta {
+  background-color: #f9e42e;
+  margin-top: 50px;
+  padding: 30px 0; 
+  text-align: center;
+}
+
+.footer-cta a {
+  background: #033048;
+  color: #fff;
+  font-size: 24px;
+  border-radius: 5px;
+  font-weight: 800;
+  padding: 12px 0;
+  text-decoration: none;
+  width: 280px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.footer h1 {
+  color: #f9e42e;
+  margin-top: 0;
+}
+
+.footer nav a {
+  padding: 15px;
+}
+
+.footer p {
+  font-weight: bold;
+  margin: 0;
+  padding: 30px 0;
+}
+
+.adspace {
+  background-color: #ffffff;
+  width: 100%;
+  height: 600px;
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .main,
+  .header {
+  flex-direction: column;
+/*  min-width: 479px;
+*/  }  
+
+  .main__primary__article {
+  }
+
+  .main__primary__article__title {
+    font-size: 18px;
+  }
+
+  .main__primary__article {
+    font-size: 14px;
+  }
+
+  .header {
+    margin: 0 0 -30px 0;
+  }
+
+  .header__nav {
+    text-align: center;
+    background-color: #f9e42e;
+    position: fixed;
+    z-index: 9;
+  }
+
+  .header__logo {
+    max-width: 100%;
+    text-align: center;
+    order: 2;
+  }
+
+  .header__nav a {
+    margin: 0 20px;
+    color: #033048;
+    font-weight: 800;
+    font-size: 14px;
+    order: 1;
+      }
+
+  .main__aside {
+    margin: -10px;
+  }    
+
+  .adspace {
+  background-color: #ffffff;
+  width: 400px;
+  height: 100px;
+  text-align: center;
+}
+  
+  .main__aside h2,
+  .main__aside a,
+  .main__aside li {
+  font-size: 18px;
+    }
+
+}
+
+.main__primary__article_p_hidden,
+.learn-more-hidden {
+  display: none;
+}
+
+
+
