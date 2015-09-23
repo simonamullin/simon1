@@ -82,13 +82,15 @@
 
             var readMoreOne = $('.main__primary__article__cta');
 
-            readMoreOne.on('click', function() {
+            readMoreOne.on('click', function(event) {
+                event.preventDefault();
             $('.main__primary__article_p_hidden').slideToggle(500);
             });
 
             var readMoreTwo = $('.learn-more-cta');
 
-            readMoreTwo.on('click', function() {
+            readMoreTwo.on('click', function(event) {
+                event.preventDefault();
             $('.learn-more-hidden').slideToggle(500);
             });
 
