@@ -1,0 +1,328 @@
+/*
+Project Name: BrineBuddy.com -- Final Project Outline
+Client: BrineBuddy
+Author: Simon Mullin
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* TESTING OUTLINE STYLES
+/*******************************************/
+
+body,
+.container a {
+  text-decoration: none;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+header {
+  width: 100%;
+  background-color: #E0FFD9;
+  display: flex;
+  justify-content: space-between;
+  /*border-bottom: 1px solid;*/
+}
+
+.header-logo {
+  width: 20%;
+  padding: 10px;
+}
+
+.header-nav li,
+.main_footer_aside_nav li {
+  display: inline-block;
+  margin: 20px 40px 10px 40px;
+  text-decoration: none;
+}
+
+.main_primary {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid;
+
+}
+
+.main_featured-content {
+  background-color: #ADFF88;
+  width: 70%;
+  height: 600px;
+  margin: 20px 40px 10px 40px;
+  text-align: center;
+
+}
+
+.main_aside {
+  background-color: #C8F866;
+  width: 30%;
+  margin: 20px 40px 10px 40px;
+}
+
+.main_about {
+  background-color: #96FFB0;
+  text-align: center;
+  margin: 20px 40px 10px 40px;
+  height: 500px;
+  /*border-bottom: 1px solid;*/
+}
+
+.main_recipes_hed {
+  margin: 20px 40px 10px 40px;
+  border-bottom: 1px solid;
+}
+
+.main_recipes_h2 {
+  text-align: center;
+}
+
+.main_recipes_pickle-links,
+.main_recipes_pickle-links_hidden {
+  display: flex;
+  justify-content: space-between;
+  width: auto%;
+  margin: 0 50px 0 50px;
+}
+
+.main_recipes_pickle-links a {
+  width: 250px;
+  height: 250px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #9BF8DE;
+}
+
+.main_recipes_pickle-links_hidden {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main_recipes_pickle-links_hidden a {
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #9BF8DE;
+}
+
+.main_recipes_ctas {
+  padding: 10px;
+  text-align: center;
+}
+
+.main_recipes_cta-2 {
+  float: right;
+}
+
+.main_recipes_cta-see-less {
+  display: none;
+}
+
+
+footer {
+  text-align: center;
+  background-color: #D1FF34;
+  margin: 20px 40px 10px 40px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+
+
+/******************************************
+/* MOBILE STYLES
+/*******************************************/
+
+@media screen and (max-width: 480px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    header {
+      position: fixed;
+      top: 0 ;
+      padding-bottom: 10px;
+      border-bottom: 1px solid;
+    }
+
+    .main_recipes_pickle-links,
+    .main_recipes_pickle-links_hidden,
+    .main_primary {
+     display: flex;
+     -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+
+    .main_featured-content {
+      max-height: 300px;
+      width: calc(90% - 40px);
+    }
+
+    .main_featured-content,
+    .recipes_recipes_hed {
+      margin-top: 130px;
+
+    }
+
+    .main_aside {
+      background-color: #C8F866;
+      width: calc(90% - 40px);
+      min-height: 300px;
+    }
+
+    .header-nav {
+      min-width: auto;
+     display: -webkit-flex;
+   display: flex;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+   /* You can set flex-wrap and flex-direction individually */
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-flex-wrap: wrap;
+   flex-wrap: wrap;
+   /* Or do it all in one line with flex flow */
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;
+   /* tweak the where items line up on the row */
+   /* valid values are: flex-start, flex-end, space-between, space-around, stretch */
+   -webkit-align-content: flex-end;
+   align-content: flex-end;
+   font-size: 14px;
+    }
+
+    .header-logo {
+      font-size: 16px;
+    }
+
+    .header-nav a {
+      width: 100px;
+    }
+
+    .header-nav a:nth-child(6) {
+      color: red;
+      order: 1;
+    }
+
+    .main_footer_aside_nav {
+      display: none;
+    }
+
+  .cd-form {
+    margin-top: 120px;
+    position: relative;
+    max-width: 50%;
+}
+
+}
+
+
+/******************************************
+/* FORM STYLES
+/*******************************************/
+
+.cd-form {
+  position: relative;
+  width: 400px;
+}
+ 
+.cd-form .cd-loading {
+  /* loading bar */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3%;
+  width: 100%;
+  transform-origin: 0 50%;
+  transform: scaleX(0);
+  visibility: hidden;
+  transition: transform 3s;
+}
+ 
+.cd-form.is-submitted .cd-loading {
+  visibility: visible;
+  transform: scaleX(1);
+}
+ 
+.cd-email {
+  top: 0;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  transition: bottom 0.3s, background-color 0.3s;
+  z-index: 1;
+}
+ 
+.is-active .cd-email {
+  bottom: 50%;
+}
+ 
+.cd-submit {
+  top: 50%;
+  /* hidden by default */
+  display: none;
+  transition: background-color 0.2s;
+  z-index: 2;
+}
+ 
+.is-active .cd-submit {
+  display: block;
+  animation: cd-bounce-in ease-out 0.4s;
+}
+ 
+@keyframes cd-bounce-in {
+  0% {
+    top: 100%;
+  }
+ 
+  60% {
+    top: 45%;
+  }
+ 
+  100% {
+    top: 50%;
+  }
+}
