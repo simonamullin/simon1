@@ -110,7 +110,7 @@ header {
 /*  background-color: #96FFB0;
 */ text-align: center;
   margin: 20px 40px 10px 40px;
-  height: 500px;
+  height: auto;
   border-bottom: 1px solid;
 }
 

@@ -43,5 +43,5 @@ function convertTemp(num) {
 
 function updateHtmlTemp(num) {
 	$('.tempFahrenheit').html(num);
-	$('input').val('0');
+	$('input').val('');
 }

@@ -38,7 +38,4 @@ event.preventDefault();
 sweetAlert({ title: "How to Make the Spicy Sweet Pickle",   text: "Text", imageUrl: "./images/pickled-vegetables.jpg" });
 });
 
-$('.brine-buddy-logo').click(function(event) {
-event.preventDefault();
-sweetAlert({ title: "Welcome to BrineBuddy.com!",   text: "Let's Get Picklin'", imageUrl: "./images/oldpickle.gif" });
-});
+$('.main_featured-content-child').slick();
